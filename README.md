@@ -1,2 +1,1 @@
-# shuttle
 an OS kernel
