@@ -10,6 +10,9 @@ mbr_entry:
   ; jump to loader
   jmp LOADER_BASE_ADDR
 
+    ; 先死循环，后面去掉
+  jmp $
+
 init_segments:
   mov ax, cs
   mov ds, ax

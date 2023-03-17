@@ -1,6 +1,6 @@
 ; mbr
 ;------------------------------------------------------------
-%include "src/boot/boot.inc"
+%include "boot.inc"
 SECTION mbr vstart=MBR_BASE_ADDR
 
 mbr_entry:
@@ -9,6 +9,9 @@ mbr_entry:
 
   ; jump to loader
   jmp LOADER_BASE_ADDR
+
+  ; 先死循环，后面去掉
+  jmp $
 
 init_segments:
   mov ax, cs

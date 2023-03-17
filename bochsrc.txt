@@ -9,6 +9,6 @@ ata0-master: type=disk, path="shuttle.img", mode=flat, cylinders=6, heads=16, sp
 log: bochsout.txt
 
 mouse: enabled=0
-keyboard_mapping: enabled=1, map=D:/01-installed/Bochs-2.7/keymaps/x11-pc-us.map
+keyboard: type=mf, keymap=D:/01-installed/Bochs-2.7/keymaps/x11-pc-us.map
 clock: sync=realtime
 cpu: ips=1000000
