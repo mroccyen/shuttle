@@ -1,0 +1,11 @@
+一、windows
+1、使用bximage生成镜像文件
+2、nasm -o mbr mbr.asm
+3、dd if=mbr of=shuttle.img bs=512 count=1 seek=0 conv=notrunc
+4、bochs -f bochsrc.txt
+
+一、windows
+1、使用bximage生成镜像文件
+2、nasm -o mbr mbr.S
+3、dd if=mbr of=shuttle.img bs=512 count=1 seek=0 conv=notrunc
+4、bochs -f bochsrc.txt
